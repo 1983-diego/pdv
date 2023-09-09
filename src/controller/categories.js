@@ -1,6 +1,6 @@
 const knex = require("../config/connect")
 
-const showCategories = async (req, res) => {
+const getCategories = async (req, res) => {
     try {
         const categories = await knex('categorias')
         
@@ -10,4 +10,4 @@ const showCategories = async (req, res) => {
     }
 }
 
-module.exports = showCategories
+module.exports = getCategories
